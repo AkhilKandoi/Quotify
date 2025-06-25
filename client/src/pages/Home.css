@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #928457;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('/bgimg4.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+#quotebox{ 
+    width: 55%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#quote{
+    width: 100%;
+    font-size: 2.1rem;
+}
+
+#quoteby{
+    margin-left: 5px;
+    font-size: 1.5rem;
+    justify-self: flex-end;
+}
+
+#quotebtn{
+    width: 100px;
+    height: 30px;
+    background-color: #bcaa6e;
+    color: rgb(0, 0, 0);
+    font-weight:bold;
+    font-size: 1.02rem;
+
+}

@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup{
+  width: 20vw;
+  height: 42vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#inputform{
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+
+#togglepassbtn{
+  background-color: transparent;
+  border: none;
+}
+
+#nameinput, #emailinput, #passwordinput{
+  width: 100%;
+  height: 15%;
+  border: none;
+  outline: none;
+  padding:0 5px;
+  border-bottom:2px solid blue ;
+  background-color: transparent;
+  font-size:1.1rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#nameinput:hover, #emailinput:hover, #passwordinput:hover{
+  background-color: rgb(231, 230, 228);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#signupbtn{
+  width: 50%;
+  height: 15%;
+  background-color: #253d5b;
+  color: aliceblue;
+  border-radius: 5px;
+}
+
+#signinlink{
+  width: 39%;
+  height: 11%;
+  margin-bottom: 5px;
+  background-color: #253d5b;
+  border-radius: 5px;
+}
+
+#orsignin{
+ position: relative;
+ bottom: 5px;
+}
+
+@media (max-width:800px){
+  .signup{
+    width: 50%;
+    height: 35%;
+  }
+}

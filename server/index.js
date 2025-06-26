@@ -16,10 +16,13 @@ mongoose.connect(uri)
  const app = express()
 
 const allowedOrigins = ['http://localhost:5173', 'https://quotify-io.onrender.com'];
-app.use(cors({
+const corsOptions = {
     origin: allowedOrigins,
     credentials: true,
-}))
+}
+
+app.use(cors(corsOptions))
+app.options(/.*/, cors(corsOptions))
 app.use(express.json())
 app.use('/api/auth', authRoutes)
 const PORT = process.env.PORT || 4590

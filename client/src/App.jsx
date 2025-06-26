@@ -1,4 +1,4 @@
-import Signup from './pages/signup.jsx'
+import Signup from './pages/Signup.jsx'
 import Home from './pages/Home.jsx'
 import './pages/Home.css'
 import Signin from './pages/Signin.jsx'

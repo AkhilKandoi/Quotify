@@ -54,7 +54,7 @@ const Home = () => {
                     const randomQuote = quoteres[Math.floor(Math.random() * quoteres.length)]
                     const quoteAuthor = authors.find(name => name.id === randomQuote.philosopher.id)
                     setQuote(`"${randomQuote.quote}"`)
-                    setAuthor(`"~${quoteAuthor?.name || Unknown}"`)
+                    setAuthor(`~${quoteAuthor?.name || Unknown}`)
                 }
 
 

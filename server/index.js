@@ -14,8 +14,10 @@ mongoose.connect(uri)
     .catch(err=>console.error('mongodb connection failed: ', err))
 
  const app = express()
+
+const allowedOrigins = ['http://localhost:5173', 'https://quotify-io.onrender.com'];
 app.use(cors({
-    origin: ['http://localhost:5173'],
+    origin: allowedOrigins,
     credentials: true,
 }))
 app.use(express.json())

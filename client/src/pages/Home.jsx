@@ -7,6 +7,7 @@ const Home = () => {
     const [quote, setQuote] = useState('')
     const [author, setAuthor] = useState('')
     const navigate = useNavigate()
+    const apiUrl = import.meta.env.VITE_API_URL;
 
     useEffect(() => {
 
@@ -15,7 +16,7 @@ const Home = () => {
             navigate('/signin')
             return
         }
-        fetch('http://localhost:4590/home', {
+        fetch(`${apiUrl}/home`, {
             method: 'GET',
             headers: {
                 Authorization: `Bearer ${token}`

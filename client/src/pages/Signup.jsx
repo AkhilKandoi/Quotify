@@ -11,6 +11,8 @@ function Signup() {
   const [togglePass, setTogglePass] = useState(false)
   const [error, setError] = useState('')
   const passwordRef = useRef(null)
+  const apiUrl = import.meta.env.VITE_API_URL;
+
 
   useEffect(()=>{
     passwordRef.current.type = togglePass ? 'text' : 'password'
@@ -27,7 +29,7 @@ function Signup() {
 
     try{
 
-      const res = await fetch('http://localhost:4590/api/auth/signup', {
+      const res = await fetch(`${apiUrl}/api/auth/signup`, {
         method: 'POST',
         headers:{
           'Content-type':'application/json',

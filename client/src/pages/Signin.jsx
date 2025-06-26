@@ -11,6 +11,7 @@ function Signin() {
     const [error, setError] = useState('')
     const passwordRef = useRef(null)
     const navigate = useNavigate()
+    const apiUrl = import.meta.env.VITE_API_URL;
 
     useEffect(() => {
         passwordRef.current.type = togglePass ? 'text' : 'password'
@@ -22,7 +23,7 @@ function Signin() {
 
         console.log(email, password)
         try {
-            const res = await fetch('http://localhost:4590/api/auth/signin', {
+            const res = await fetch(`${apiUrl}/api/auth/signin`, {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json',

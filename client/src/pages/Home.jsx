@@ -7,7 +7,6 @@ const Home = () => {
     const [quote, setQuote] = useState('')
     const [author, setAuthor] = useState('')
     const navigate = useNavigate()
-    let ran = false;
 
     useEffect(() => {
 
@@ -64,9 +63,6 @@ const Home = () => {
         }
 
     useEffect(() => {
-
-        if (ran) return;
-        ran = true;
         quotes()
     }, [])
 

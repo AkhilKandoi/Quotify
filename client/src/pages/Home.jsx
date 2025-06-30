@@ -80,7 +80,7 @@ const Home = () => {
                 <div id="quotebox">
                     <div id="quote">
                         {loading ? (
-                            <img src="/thinking.png" alt="Loading..." style={{ width: '50px' }} />
+                            <img src="/thinking.png" alt="Loading..." />
                         ) : (
                             quote
                         )}
